@@ -1,0 +1,21 @@
+### Get all workouts
+GET http://localhost:3000/api/workouts
+
+### Get workout byID
+GET http://localhost:3000/api/workouts/66a80bca18f8ef8e305bc84c
+
+### Post  workout
+POST http://localhost:3000/api/workouts
+Content-Type: "application/json"
+
+{
+    "title":"Sentadillas",
+    "reps": 5,
+    "load":0
+}
+
+### Delete workout byID
+DELETE http://localhost:3000/api/workouts/66a80bca18f8ef8e305bc84c
+
+### Patch workout byID
+PATCH http://localhost:3000/api/workouts
