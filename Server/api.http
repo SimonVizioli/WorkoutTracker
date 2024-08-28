@@ -1,6 +1,24 @@
 ### Get all workouts
 GET http://localhost:3000/api/workouts
 
+### Post signup
+POST  http://localhost:3000/api/user/signup
+Content-Type: "application/json"
+
+{
+    "email":"jhondoe@example.com",
+    "password": "blabla",
+}
+
+### Post login
+POST  http://localhost:3000/api/user/login
+Content-Type: "application/json"
+
+{
+    "email":"adsasda",
+    "password": "adsasdasda",
+}
+
 ### Get workout byID
 GET http://localhost:3000/api/workouts/66a80bca18f8ef8e305bc84c
 
