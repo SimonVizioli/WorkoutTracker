@@ -6,7 +6,12 @@ import {
     getWorkoutById,
     updateWorkout,
 } from "../controllers/workout.js";
+import requireAuth from "../middleware/requireAuth.js";
+
 export const workoutsRouter = Router();
+
+//require auth for all workout routes
+workoutsRouter.use(requireAuth);
 
 workoutsRouter.get("/", getAllWorkouts);
 workoutsRouter.post("/", createWorkout);
